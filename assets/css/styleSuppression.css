@@ -1,0 +1,43 @@
+
+/*Couleur de fond pour le body*/
+body{
+  background-color: #ccc;
+  line-height: 1.6em;
+  /*color: #818181;*/
+  font-weight: 300;
+
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Lane', sans-serif;
+}
+
+/*Pour centrer la liste*/
+.centrerListe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*Entete pour les tableaux*/
+.entete{
+  border: 1px solid #818181;
+  background-color: #818181;
+  color: #fff;
+  /*font-size: 10px;
+
+  /*
+  color: #084c94;//blue
+  color: #f59b21;//Orange
+  color: #000000;//black
+  color:#808000;//olive
+  */
+}
+
+/*Couleur de fond pour le contenant des données à afficher*/
+.bgContent{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
