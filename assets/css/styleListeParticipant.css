@@ -1,0 +1,70 @@
+
+
+.navbar{
+  background-color:#000;
+  color: #ffffff;
+}
+
+.nav{
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #9d9d9d;
+  /*
+  color: #084c94;//blue
+  color: #f59b21;//Orange
+  color: #000000;//black
+  color:#808000;//olive
+  */
+}
+.navbar-inverse .navbar-nav > li > a :hover {
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+body{
+  background-color: #ccc;
+  line-height: 1.6em;
+  font-weight: 300;
+
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Lane', sans-serif;
+}
+
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.centrerFormulaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-panel{
+  border: 1px solid #818181;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.centrerListe{
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*min-height: 100vh;
+  min-width: 100vh;*/
+}
+
