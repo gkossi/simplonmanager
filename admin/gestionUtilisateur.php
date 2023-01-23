@@ -100,9 +100,9 @@ $users = afficher_utilisateurs($mysqli);
                                     <td><?php echo $user['libelle']; ?></td>
                                     <td>
                                         <a href="utilisateurModif.php?login=<?php echo $user['login']; ?>" class="btn btn-primary">Modifier</a> |
-                                        <a href="reinitialiserLogin.php?login=<?php echo $user['login']; ?>" class="btn btn-secondary">Reinitialiser</a> |
+                                        <a href="reinitialiserLogin.php?login=<?php echo $user['login']; ?>" class="btn btn-info">Reinitialiser</a> |
                                         <a href="activerCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-success">Activer</a> |
-                                        <a href="desactiverCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-infos">Désactiver</a> |
+                                        <a href="desactiverCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-warning">Désactiver</a> |
                                         <a href="supprimerCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-danger">Supprimer</a>
                                     </td>
                                 </tr>
