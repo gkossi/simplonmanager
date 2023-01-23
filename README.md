@@ -44,4 +44,4 @@ UTILISATION
 - La liste des participants est accessible à partir de l'onglet "Liste des participants"
 
 # AUTRES
-- Liste peut également changer son mot de passe à partir de l'onglet "Changer mon mot de passe"
+- Un utilisateur peut également changer son mot de passe à partir de l'onglet "Changer mon mot de passe"
