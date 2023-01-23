@@ -2,10 +2,8 @@
 
 SIMPLON MANAGER est une application permettant de gérer les participants à un évènement donné.
 
-======================================================================================================================
-VOICI LES INSTRUCTIONS A SUIVRE POUR UTILISER L'APPLICATION
-======================================================================================================================
 
+# VOICI LES INSTRUCTIONS A SUIVRE POUR UTILISER L'APPLICATION
 
 ----------------------------------------------------------------------------------------------------------------------
 DEPLOIEMENT
@@ -42,3 +40,10 @@ Compte Utilisateur simple : Login : vivien / Mot de passe : 1234 (Actif)
 - Se connecter avec un compte administrateur et accéder à l'accueil
 - Cliquer sur l'onglet "Gestion des participants" pour accéder à l'espace d'administration des participants
 - Opérations possible : Créer, Rechercher, modifier et supprimer un participant
+
+# C/- LISTES
+- La liste des utilisateurs est accessible à partir de l'onglet "Gestion des utilisateur"
+- La liste des participants est accessible à partir de l'onglet "Liste des participants"
+
+# AUTRES
+- Liste peut également changer son mot de passe à partir de l'onglet "Changer mon mot de passe"
