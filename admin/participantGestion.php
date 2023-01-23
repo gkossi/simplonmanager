@@ -86,81 +86,81 @@
         <div class="container">
             <div class="row">
                 <div class="centrerListe">
-                    <div>
-                    <h1><strong>Gestion des participants</strong></h1>
-                    
-                    <!--a href="./admin/participantAjout.php" class="btn btn-warning">Imprimer la liste</a>
-                    <a href="./admin/participantAjout.php" class="btn btn-success">Ajout d'un nouveau participant</a>
-                    <a href="./admin/participantAjout.php" class="btn btn-primary">Rechercher participant</a-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 main">
+                        <h1><strong>Gestion des participants</strong></h1>
+                        <hr>
+                        <!--a href="./admin/participantAjout.php" class="btn btn-warning">Imprimer la liste</a>
+                        <a href="./admin/participantAjout.php" class="btn btn-success">Ajout d'un nouveau participant</a>
+                        <a href="./admin/participantAjout.php" class="btn btn-primary">Rechercher participant</a-->
 
-                    <form id="formsearch" name="form" method="get" action="#">
-                    <a href="./participantAjout.php" class="btn btn-success">Nouveau participant</a>
-                        <label> <input type="submit" name="bouton_recherche" value="Rechercher" class="btn btn-primary"></label> 
-                        <label>Nom<font color="red">*</font> :<input type="text" name="nom" class="form-control" required></label>
+                        <form id="formsearch" name="form" method="get" action="#">
+                            <a href="./participantAjout.php" class="btn btn-success">Nouveau participant</a>
+                            <label> <input type="submit" name="bouton_recherche" value="Rechercher" class="btn btn-primary"></label> 
+                            <label>Nom<font color="red">*</font> :<input type="text" name="nom" class="form-control" required></label>
 
-                        <label>Prénom(s)<font color="red">*</font>:<input type="text" name="prenom" class="form-control"></label>
+                            <label>Prénom(s)<font color="red">*</font>:<input type="text" name="prenom" class="form-control"></label>
 
-                        <label>Pays<font color="red">*</font> :
-                            <select name="pays">
-                                <?php
-                                foreach ($pays as $paysInd) {
-                                    ?>
-                                    <option><?php echo $paysInd['libelle']; ?></option>
+                            <label>Pays<font color="red">*</font> :
+                                <select name="pays">
                                     <?php
-                                }
-                                ?>
-                            </select>
-                        </label>
-
-                        <label>Téléphone :<input type="text" name="telephone" class="form-control"></label>
-                                               
-                    </form>
-
-                    <hr>
-                    <table width="" border="1" cellspacing="0" cellpadding="5" class="table table-bordered table-striped">
-                        <tr class="entete">
-                            <td>N°</td>
-							<td>Nom</td>
-                            <td>Prénoms</td>
-                            <td>Téléphone</td>
-                            <td>E-mail</td>
-                            <td>Pays</td>
-                            <td>Date Ajout</td>
-                            <td>Date Modification</td>
-                            <!--td>Signature</td-->
-                            <td>Action</td>
-                        </tr>
-                        <?php
-                            $nb=0;
-                            foreach ($participants as $p) {
-                                ?>
-                                <tr>
-                                    <td><?php echo ++$nb; ?> </td>
-                                    <td><?php echo $p['nom'] ?></td>
-                                    <td><?php echo $p['prenoms'] ?></td>
-                                    <td>
-                                        <?php
-                                        $indicatif = recuperer_indicatif_pays_from_id($mysqli, $p['id_pays']);
-                                        if ($indicatif != "") {
-                                            echo $indicatif;
-                                            echo "&nbsp;";
-                                            echo $p['telephone'];
-                                        }
+                                    foreach ($pays as $paysInd) {
                                         ?>
-                                    </td>
-                                    <td><?php echo $p['email'] ?></td>
-                                    <td><?php echo recuperer_libelle_pays_from_id($mysqli, $p['id_pays']) ?></td>
-                                    <td><?php echo $p['date_creation'] ?></td>
-                                    <td><?php echo $p['date_modification'] ?></td>
-                                    <!--td></td-->
-                                    <td>
-                                        <a href="./participantModification.php?id=<?php echo $p['id'] ?>" class="btn btn-primary">Modifier</a> |
-                                        <!--?php var_dump($p['id']);?-->
-                                        <a href="./participantSuppression.php?id=<?php echo $p['id']; ?>" class="btn btn-danger">Supprimer</a>
-                                    </td>
-                                </tr>
-                        <?php } ?>
-                    </table>
+                                        <option><?php echo $paysInd['libelle']; ?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                            </label>
+
+                            <label>Téléphone :<input type="text" name="telephone" class="form-control"></label>
+                                                
+                        </form>
+
+                        <hr>
+                        <table width="" border="1" cellspacing="0" cellpadding="5" class="table table-bordered table-striped">
+                            <tr class="entete">
+                                <td>N°</td>
+                                <td>Nom</td>
+                                <td>Prénoms</td>
+                                <td>Téléphone</td>
+                                <td>E-mail</td>
+                                <td>Pays</td>
+                                <td>Date Ajout</td>
+                                <td>Date Modification</td>
+                                <!--td>Signature</td-->
+                                <td>Action</td>
+                            </tr>
+                            <?php
+                                $nb=0;
+                                foreach ($participants as $p) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo ++$nb; ?> </td>
+                                        <td><?php echo $p['nom'] ?></td>
+                                        <td><?php echo $p['prenoms'] ?></td>
+                                        <td>
+                                            <?php
+                                            $indicatif = recuperer_indicatif_pays_from_id($mysqli, $p['id_pays']);
+                                            if ($indicatif != "") {
+                                                echo $indicatif;
+                                                echo "&nbsp;";
+                                                echo $p['telephone'];
+                                            }
+                                            ?>
+                                        </td>
+                                        <td><?php echo $p['email'] ?></td>
+                                        <td><?php echo recuperer_libelle_pays_from_id($mysqli, $p['id_pays']) ?></td>
+                                        <td><?php echo $p['date_creation'] ?></td>
+                                        <td><?php echo $p['date_modification'] ?></td>
+                                        <!--td></td-->
+                                        <td>
+                                            <a href="./participantModification.php?id=<?php echo $p['id'] ?>" class="btn btn-primary">Modifier</a> |
+                                            <!--?php var_dump($p['id']);?-->
+                                            <a href="./participantSuppression.php?id=<?php echo $p['id']; ?>" class="btn btn-danger">Supprimer</a>
+                                        </td>
+                                    </tr>
+                            <?php } ?>
+                        </table>
                     </div>
                 </div>
             </div>

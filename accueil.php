@@ -78,9 +78,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="centrerListe">
-                
-                    <div>
+                <div class="centrerListe">               
+                    <div class="col-lg-12 col-md-12 col-sm-12 main">
                         <img src="./assets/img/fond/softBG2-01.jpg" alt="">
                     </div>
                 </div>
