@@ -9,15 +9,15 @@ SIMPLON MANAGER est une application permettant de gérer les participants à un 
 DEPLOIEMENT
 -----------
 1. Base de données :
--Installer et configurer WampServer ou Xampp
--Accéder PHPMyAdmin et créer une données nommée : simplonmanager_db
--Créer un utilisateur (username : root, mot de passe : toor) et lui donner les droits nécessaires sur la base de données
+- Installer et configurer WampServer ou Xampp
+- Accéder PHPMyAdmin et créer une données nommée : simplonmanager_db
+- Créer un utilisateur (username : root, mot de passe : toor) et lui donner les droits nécessaires sur la base de données
 créée.
--Importer la base de données associées au projet dont le script se trouve dans le dossier database
+- Importer la base de données associées au projet dont le script se trouve dans le dossier database
 
 2. Fichiers
--Aller dans le dossier www (pour WampServer) et htdocs (pour Xampp)
--Copier et coller le répertoire contenant le projet Simplon Manager
+- Aller dans le dossier www (pour WampServer) et htdocs (pour Xampp)
+- Copier et coller le répertoire contenant le projet Simplon Manager
 
 
 ----------------------------------------------------------------------------------------------------------------------
