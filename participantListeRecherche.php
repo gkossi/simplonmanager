@@ -85,9 +85,9 @@
         <div class="container">
             <div class="row">
                 <div class="centrerListe">
-                    <div>             
+                    <div class="col-lg-12 col-md-12 col-sm-12 main">             
                     <h1><strong>Liste des participants</strong></h1>
-
+                    <hr>
                     <form id="formsearch" name="form" method="get" action="#">
                         <label> <input type="submit" name="bouton_recherche" value="Rechercher" class="btn btn-success"></label>
                         <label>Nom<font color="red">*</font> :<input type="text" name="nom" class="form-control" required></label>

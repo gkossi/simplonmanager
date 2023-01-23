@@ -9,7 +9,7 @@ function connexion($serveur, $login, $pwd, $bd, $charset) {
     return $mysqli;
 }
 
-$mysqli = connexion("localhost", "gkossi", "toor142536", "simplonmanager_db", "utf8");
+$mysqli = connexion("localhost", "root", "toor", "simplonmanager_db", "utf8");
 
 
 /* ---------- FONCTIONS POUR GESTION DEs COMPTES UTILISATEURS ---------- */

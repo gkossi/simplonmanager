@@ -77,12 +77,13 @@ $users = afficher_utilisateurs($mysqli);
         <div class="container">
             <div class="row">
                 <div class="centrerListe">
-                    <div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 main">
+                    <!--div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"-->
                         <h1>Gesion des utilisateurs</h1>
                         <hr/>
                         <a href="UtilisateurAjout.php" class="btn btn-success"> Ajouter un utilisateur</a>
                         <br/><br/>
-                        <table width="600" border="1" cellspacing="0" cellpadding="5" class="table table-bordered">
+                        <table border="1" cellspacing="0" cellpadding="5" class="table table-bordered">
                             <tr>
                                 <td>Nom</td>
                                 <td>Prenom</td>
@@ -98,15 +99,16 @@ $users = afficher_utilisateurs($mysqli);
                                     <td><?php echo $user['login']; ?></td>
                                     <td><?php echo $user['libelle']; ?></td>
                                     <td>
-                                        <a href="utilisateurModif.php?login=<?php echo $user['login']; ?>">Modifier</a> |
-                                        <a href="reinitialiserLogin.php?login=<?php echo $user['login']; ?>">Reinitialiser</a> |
-                                        <a href="activerCompte.php?login=<?php echo $user['login']; ?>">Activer</a> |
-                                        <a href="desactiverCompte.php?login=<?php echo $user['login']; ?>">Désactiver</a> |
-                                        <a href="supprimerCompte.php?login=<?php echo $user['login']; ?>">Supprimer</a>
+                                        <a href="utilisateurModif.php?login=<?php echo $user['login']; ?>" class="btn btn-primary">Modifier</a> |
+                                        <a href="reinitialiserLogin.php?login=<?php echo $user['login']; ?>" class="btn btn-secondary">Reinitialiser</a> |
+                                        <a href="activerCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-success">Activer</a> |
+                                        <a href="desactiverCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-infos">Désactiver</a> |
+                                        <a href="supprimerCompte.php?login=<?php echo $user['login']; ?>" class="btn btn-danger">Supprimer</a>
                                     </td>
                                 </tr>
                             <?php } ?>
                         </table>
+                    <!--/div-->
                     </div>
                 </div>
             </div>
