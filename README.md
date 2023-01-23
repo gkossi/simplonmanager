@@ -25,10 +25,8 @@ UTILISATION
 -----------
 
 # Comptes Utilisateurs :
-# ********************
-
-Compte Administrateur : Login : gkossi / Mot de passe : 1234 (Actif)
-Compte Utilisateur simple : Login : vivien / Mot de passe : 1234 (Actif)
+- Compte Administrateur : Login : gkossi / Mot de passe : 1234 (Actif)
+- Compte Utilisateur simple : Login : vivien / Mot de passe : 1234 (Actif)
 
 
 # A/- GESTION DES UTILISATEURS
